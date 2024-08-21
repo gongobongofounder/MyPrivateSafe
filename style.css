@@ -1,34 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 .body {
-    background-color: #131314;
+    background-color: black;
+}
+
+.drive_main_page {
     color: white;
+    background-color: black;
+    height: fit-content;
 }
 
 .home {
-    background-color: var(--dt-surface-container-low, #fff);
-    display: grid;
-    grid-template-areas:
-        "mesg mesg mesg mesg mesg"
-        "head head head head c-sh"
-        "newb vwgr d--s c-sw c-sh"
-        "navp vwgr d--s c-sw c-sh";
-    grid-template-columns: auto 1fr auto auto auto;
-    grid-template-rows: auto auto auto 1fr;
-    height: 100%;
+    height: fit-content;
+    /* border: 2px solid red; */
 }
 
 .header {
     display: flex;
-    pointer-events: none;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1000;
-    padding-right: 4px;
+    height: fit-content;
+    /* border: 2px solid red; */
 }
 
 .drive-logo {
@@ -56,4 +47,33 @@
 
     height: 40px;
     width: 40px;
+}
+
+.home-body {
+    display: flex;
+    align-items: center;
+}
+
+.left-box {
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.right-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 69px;
+    padding-left: 50px;
+}
+
+.pdf-card {
+    display: grid;
+    color: white;
+    max-width: 200px;
+}
+
+.pdf-card img {
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 20px;
 }
